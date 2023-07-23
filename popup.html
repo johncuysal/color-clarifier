@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./popup.css">
+    <title class="extension-title">Color Clarifier</title>
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+</head>
+<body>
+    <h1 class="extension-header">Color Clarifier</h1>
+    <label class="label" for="contrast-slider">Contrast</label>
+    <span id="contrast-value-container">100</span>
+    <input class="slider" type="range" id="contrast-slider" min="100" max="400" step="1" value="100">
+    <label class="label" for="hue-slider">Hue</label>
+    <span id="hue-value-container">0</span>
+    <input class="slider" type="range" id="hue-slider" min="0" max="360" step="1" value="0">
+    <label for="dropdown" class="label">Presets</label>
+    <select id="dropdown" class="presets">
+        <option value="0"></option>
+        <option value="90">Forward Hue-Shift</option>
+        <option value="270">Backward Hue-Shift</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Color Clarifier",
+  "version": "0.4",
+  "description": "Fine-tune the look of webpages to make visual elements easier to distinguish. Made with empathy.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
+
